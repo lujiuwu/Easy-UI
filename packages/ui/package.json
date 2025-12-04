@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "story:dev": "histoire dev --host",
+    "dev": "histoire dev --host",
     "story:build": "pnpm run build && histoire build",
     "story:preview": "histoire preview"
   },
