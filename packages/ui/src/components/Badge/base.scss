@@ -1,0 +1,85 @@
+$badge-text-offset: -8px;
+$badge-dot-offset: -2px;
+
+.ey-badge-wrapper {
+  position: relative;
+}
+
+.ey-badge {
+  position: absolute;
+  transform: translateY(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              width 0.3s ease, 
+              height 0.3s ease, 
+              opacity 0.3s ease;
+}
+
+/** text */
+.ey-badge--text {
+  color: #fff;
+  border-radius: 10px;
+  height: 18px;
+  padding: 0 6px;
+  font-size: 12px;
+  min-width: 18px;
+  text-wrap: nowrap;
+  
+  &--top-right {
+    top: $badge-text-offset;
+    right:$badge-text-offset;
+  }
+  
+  &--top-left {
+    top: $badge-text-offset;
+    left: $badge-text-offset;
+  }
+  
+  &--bottom-right {
+    bottom: $badge-text-offset;
+    right: $badge-text-offset;
+  }
+  
+  &--bottom-left {
+    bottom: $badge-text-offset;
+    left: $badge-text-offset;
+  }
+}
+
+/** dot */
+.ey-badge--dot {
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  
+  &--top-right {
+    top: $badge-dot-offset;
+    right: $badge-dot-offset;
+  }
+  
+  &--top-left {
+    top: $badge-dot-offset;
+    left: $badge-dot-offset;
+  }
+  
+  &--bottom-right {
+    bottom: $badge-dot-offset;
+    right: $badge-dot-offset;
+  }
+  
+  &--bottom-left {
+    bottom: $badge-dot-offset;
+    left: $badge-dot-offset;
+  }
+}
+
+/** hidden */
+.ey-badge--hidden {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  color: transparent;
+}

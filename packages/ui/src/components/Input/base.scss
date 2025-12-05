@@ -1,0 +1,18 @@
+.ey-input {
+  width: auto;
+  color: #000;
+  border: 1px solid #9d5656;
+  padding: 0;
+}
+
+.ey-input--default {
+  border-radius: 5px;
+}
+
+.ey-input--underline {
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  &:focus {
+    border-bottom: 1px solid #000;
+  }
+}

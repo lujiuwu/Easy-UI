@@ -1,8 +1,27 @@
 @import './components/Button/base.css';
 
 * {
-  border: none;
-  outline: none;
   margin: 0;
   padding: 0;
+}
+
+/* 去除 button 和 input 元素的默认边框 */
+button,
+input {
+  border: none;
+  outline: none;
+  /* 去除浏览器默认外观 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* 去除 focus 状态的默认样式 */
+  box-shadow: none;
+}
+
+/* 去除 input 的 focus 状态边框 */
+input:focus,
+input:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
