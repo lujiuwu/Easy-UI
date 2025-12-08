@@ -9,13 +9,10 @@
       <EyInput />
     </Variant>
     <Variant title="Underline">
-      <EyInput variant="underline" />
+      <EyInput variant="underline" :clearable="true" />
     </Variant>
-    <Variant title="With prefix">
+    <Variant title="With suffix">
       <EyInput variant="default">
-        <template #prefix>
-          fdsf
-        </template>
         <template #suffix>
           <EyButton text="搜索" />
         </template>

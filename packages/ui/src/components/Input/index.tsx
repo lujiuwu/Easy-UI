@@ -24,6 +24,10 @@ export const EyInput = defineComponent({
     variant: {
       type: String as PropType<InputProps['variant']>,
       default: 'default'
+    },
+    clearable: {
+      type: Boolean as PropType<InputProps['clearable']>,
+      default: false
     }
   },
   setup(props, { slots }) {
@@ -34,7 +38,7 @@ export const EyInput = defineComponent({
             {slots.prefix?.()}
           </div>
           <input
-          class={`ey-input__content`}
+          class={`ey-input__content ${props.clearable ? 'ey-input__content--clearable' : ''}`}
           value={props.value}
           placeholder={props.placeholder}
           disabled={props.disabled}

@@ -1,18 +1,39 @@
 .ey-input {
-  width: auto;
+  width: 320px; // 固定宽度
+  height: auto;
   color: #000;
-  border: 1px solid #9d5656;
-  padding: 0;
+  display: flex; // 确保是 flex 容器
+  align-items: center;
+  
+  &__prefix,
+  &__suffix {
+    flex-shrink: 0; // 前缀和后缀不收缩
+
+  }
+  
+  &__content {
+    flex: 1; // 占据剩余空间
+    min-width: 0; // 允许收缩，防止内容溢出
+    width: 0; // 配合 flex: 1 使用，确保正确计算剩余空间
+    padding: 8px 16px;
+    background-color: transparent;
+    position: relative;
+  }
 }
 
 .ey-input--default {
   border-radius: 5px;
+  border: 1px solid #666;
+  transition: border 0.3s ease;
+  &:focus-within {
+    border: 1px solid #fff;
+  }
 }
 
 .ey-input--underline {
-  border-bottom: 1px solid #000;
-  background-color: transparent;
-  &:focus {
-    border-bottom: 1px solid #000;
+  border-bottom: 1px solid #666;
+  transition: border-bottom 0.3s ease;
+  &:focus-within {
+    border-bottom: 1px solid #fff;
   }
 }

@@ -9,6 +9,7 @@ export interface InputProps {
   disabled?: boolean
   readonly?: boolean
   slots?: InputSlots
+  clearable?: boolean
 }
 
 interface InputSlots {

@@ -1,2 +1,9 @@
 # Easy-UI
-easy-ui
+
+
+```
+  cd package/ui
+  pnpm dev
+```
+
+
