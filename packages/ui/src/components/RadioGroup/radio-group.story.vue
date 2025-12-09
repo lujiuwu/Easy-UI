@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { EyRadio } from './index'
+  import { EyRadioGroup } from './index'
   import { ref } from 'vue'
 
   const value = ref('1')
@@ -11,15 +11,18 @@
 </script>
 
 <template>
-  <Story title="Radio" group="ui">
+  <Story title="RadioGroup" group="ui">
     <Variant title="Default">
-      <EyRadio v-model="value" :options="options" />
+      <EyRadioGroup v-model="value" :options="options" />
     </Variant>
     <Variant title="Outlined">
-      <EyRadio v-model="value" :options="options" variant="outlined" />
+      <EyRadioGroup v-model="value" :options="options" variant="outlined" />
     </Variant>
     <Variant title="Card">
-      <EyRadio v-model="value" :options="options" variant="card" />
+      <EyRadioGroup v-model="value" :options="options" variant="card" />
+    </Variant>
+    <Variant title="Tab">
+      <EyRadioGroup v-model="value" :options="options" variant="tab" />
     </Variant>
   </Story>
 </template>

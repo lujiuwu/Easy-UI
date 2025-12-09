@@ -5,17 +5,24 @@ import { EyButton } from './index'
 
 <template>
   <Story title="Button" group="ui">
-    <Variant title="Primary">
-      <EyButton />
+    <Variant title="Variant">
+      <div class="flex gap-20px">
+        <EyButton variant="default" />
+        <EyButton variant="outlined" />
+        <EyButton variant="text" />
+      </div>
     </Variant>
-    <Variant title="Outlined">
-      <EyButton variant="outlined" />
+    <Variant title="Size">
+      <div class="flex gap-20px items-center">
+        <EyButton size="small" />
+        <EyButton size="default" />
+        <EyButton size="large" />
+      </div>
     </Variant>
-    <Variant title="Text">
-      <EyButton variant="text" />
-    </Variant>
-    <Variant title="Custom">
-      <EyButton class="bg-red-500 color-yellow" text="Custom" />
+    <Variant title="Disabled">
+      <div class="flex gap-20px">
+        <EyButton disabled />
+      </div>
     </Variant>
   </Story>
 </template>

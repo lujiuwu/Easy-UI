@@ -1,0 +1,42 @@
+.ey-btn {
+  border-radius: 5px;
+  outline: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+.ey-btn--variant--default {
+  background-color: #fff;
+  color: #000;
+}
+
+.ey-btn--variant--outlined {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.ey-btn--variant--text {
+  background-color: transparent;
+  border: none;
+  color: #000;
+}
+
+.ey-btn--size--small {
+  padding: 3px 6px;
+  font-size: 12px;
+}
+
+.ey-btn--size--default {
+  padding: 4px 8px;
+}
+
+.ey-btn--size--large {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.ey-btn--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,26 +1,27 @@
 /// <reference types="vue/jsx" />
 import { PropType, defineComponent, getCurrentInstance } from "vue";
-import { RadioProps } from "./type";
+import { RadioGroupProps } from "./type";
+import { EyRadio } from "./_components/Radio";
 import './base.scss';
 
 let radioGroupCounter = 0
 
-export const EyRadio = defineComponent({
-  name: 'EyRadio',
+export const EyRadioGroup = defineComponent({
+  name: 'EyRadioGroup',
   props: {
     value: {
-      type: String as PropType<RadioProps['value']>,
+      type: String as PropType<RadioGroupProps['value']>,
     },
     options: {
-      type: Array as PropType<RadioProps['options']>,
+      type: Array as PropType<RadioGroupProps['options']>,
       default: () => [],
     },
     direction: {
-      type: String as PropType<RadioProps['direction']>,
+      type: String as PropType<RadioGroupProps['direction']>,
       default: 'horizontal'
     },
     variant: {
-      type: String as PropType<RadioProps['variant']>,
+      type: String as PropType<RadioGroupProps['variant']>,
       default: 'default'
     }
   },
@@ -36,10 +37,12 @@ export const EyRadio = defineComponent({
           ]}
         >
           {props.options.map((option) => (
-            <div class="ey-radio-group__item">
-              <input type="radio" name={radioName} value={option.value} id={option.value} checked={props?.value === option.value} />
-              <label for={option.value}>{option.label}</label>
-            </div>
+            <EyRadio
+              name={radioName}
+              value={option.value}
+              checked={props.value === option.value}
+              label={option.label}
+            />
           ))}
         </div>
       )

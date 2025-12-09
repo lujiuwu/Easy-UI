@@ -27,7 +27,7 @@
       </div>
     </Variant>
     <Variant title="Four positions">
-      <div class="flex justify-between">
+      <div class="flex gap-20px items-center">
         <EyBadge text="99+" position="top-right" :value="value2">
           <EyButton text="Top Right" @click="value2 = !value2" />
         </EyBadge>
