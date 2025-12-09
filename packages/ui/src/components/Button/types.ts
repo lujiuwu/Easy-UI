@@ -4,3 +4,7 @@ export interface ButtonProps {
   text?: string
   variant?: ButtonVariant
 }
+
+export type ButtonEmits = {
+  (e: 'click'): void
+}
