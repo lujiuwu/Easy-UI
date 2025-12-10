@@ -1,10 +1,32 @@
 .ey-checkbox {
   display: flex;
   gap: 10px;
+  width: fit-content;
+  height: fit-content;
   .ey-checkbox__item {
     display: flex;
     align-items: center;
     gap: 4px;
+    cursor: pointer;
+    user-select: none; // 防止文本选中
+    
+    input[type="checkbox"] {
+      cursor: pointer;
+      margin: 0; // 重置默认 margin
+      // 使用主题变量设置选中颜色
+      accent-color: var(--ey-color-primary);
+      // 支持自定义颜色
+      &[data-accent-color] {
+        accent-color: var(--checkbox-accent-color);
+      }
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+
+    span {
+      cursor: pointer;
+    }
   }
 }
 
@@ -14,4 +36,40 @@
 
 .ey-checkbox--vertical {
   flex-direction: column;
+}
+
+// outlined
+.ey-checkbox--outlined {
+  .ey-checkbox__item {
+    border: 1px solid var(--ey-border-color);
+    border-radius: 5px;
+    padding: 4px 8px;
+    transition: border-color 0.3s ease; // 添加过渡效果
+    
+    // 当内部的 radio 被选中时，改变边框颜色
+    &:has(input[type="checkbox"]:checked) {
+      border-color: var(--ey-color-primary);
+    }
+
+  }
+}
+
+// card
+.ey-checkbox--card {
+  .ey-checkbox__item {
+    border-radius: 5px;
+    color:var(--ey-color-default);
+    background-color:var(--ey-color-primary-plain);
+    padding: 4px 8px;
+  }
+}
+
+// tab
+.ey-checkbox--tab {
+  .ey-checkbox__item {
+    padding: 4px 8px;
+    &:has(input[type="checkbox"]:checked) {
+      border-bottom: 2px solid var(--ey-color-primary);
+    }
+  }
 }

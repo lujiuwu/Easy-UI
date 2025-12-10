@@ -5,11 +5,21 @@ import { EyButton } from './index'
 
 <template>
   <Story title="Button" group="ui">
+    <Variant title="Type">
+      <div class="flex gap-20px">
+        <EyButton />
+        <EyButton type="primary" />
+      </div>
+    </Variant>
     <Variant title="Variant">
       <div class="flex gap-20px">
-        <EyButton variant="default" />
-        <EyButton variant="outlined" />
-        <EyButton variant="text" />
+        <EyButton type="default" variant="default" />
+        <EyButton type="default" variant="plain" />
+        <EyButton type="default" variant="text" />
+        <EyButton type="primary" variant="default" />
+        <EyButton type="primary" variant="outlined" />
+        <EyButton type="primary" variant="plain" />
+        <EyButton type="primary" variant="text" />
       </div>
     </Variant>
     <Variant title="Size">
@@ -22,6 +32,12 @@ import { EyButton } from './index'
     <Variant title="Disabled">
       <div class="flex gap-20px">
         <EyButton disabled />
+      </div>
+    </Variant>
+    <Variant title="Prefix Icon And Suffix Icon">
+      <div class="flex gap-20px">
+        <EyButton prefixIcon="mdi:home" />
+        <EyButton suffixIcon="mdi:arrow-right" />
       </div>
     </Variant>
   </Story>

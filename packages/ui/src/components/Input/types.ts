@@ -13,6 +13,6 @@ export interface InputProps {
 }
 
 interface InputSlots {
-  prefix?: () => VNode
-  suffix?: () => VNode
+  prefix?: () => VNode | string
+  suffix?: () => VNode | string
 }

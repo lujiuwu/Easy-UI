@@ -49,13 +49,13 @@ export const EyInput = defineComponent({
             {slots.prefix?.()}
           </div>
           <input
-          class={`ey-input__content ${props.clearable ? 'ey-input__content--clearable' : ''}`}
-          value={value.value}
-          onInput={handleInput}
-          placeholder={props.placeholder}
-          disabled={props.disabled}
-          readonly={props.readonly}
-        />
+            class={`ey-input__content ${props.clearable ? 'ey-input__content--clearable' : ''}`}
+            value={value.value}
+            onInput={handleInput}
+            placeholder={props.placeholder}
+            disabled={props.disabled}
+            readonly={props.readonly}
+          />
         <div class="ey-input__suffix">
           {slots.suffix?.()}
         </div>

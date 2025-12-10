@@ -20,9 +20,19 @@ export default defineConfig({
         allow: [searchForWorkspaceRoot(process.cwd())],
       },
     },
+    optimizeDeps: {
+      include: ['@iconify/vue'],
+    },
+    resolve: {
+      dedupe: ['vue'],
+    },
   },
   tree: {
     groups: [
+      {
+        id: 'icon',
+        title: 'Easy-Icon',
+      },
       {
         id: 'ui',
         title: 'Easy-UI',

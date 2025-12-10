@@ -19,6 +19,10 @@ export const EyRadio = defineComponent({
     checked: {
       type: Boolean as PropType<RadioProps['checked']>,
       default: false
+    },
+    disabled: {
+      type: Boolean as PropType<RadioProps['disabled']>,
+      default: false
     }
   },
   emits: {
@@ -41,6 +45,7 @@ export const EyRadio = defineComponent({
             value={props.value} 
             name={props.name} 
             checked={props.checked} 
+            disabled={props.disabled}
           />
           <span>{props.label}</span>
         </label>

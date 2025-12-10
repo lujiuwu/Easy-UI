@@ -1,0 +1,73 @@
+// 亮色主题
+[data-theme="light"] {
+  // 默认
+  --ey-color-default: #000000;
+  --ey-color-default-plain: rgba(97, 97, 97, 0.2);
+  --ey-color-default-hover: #bec2ca;
+  --ey-color-default-active: #a3a6ad;
+  
+  // 主色
+  --ey-color-primary: #58ebd3;
+  --ey-color-primary-plain: rgba(65, 184, 188, 0.2);
+  --ey-color-primary-hover: #61cdd1;
+  --ey-color-primary-active: #41b7bc;
+  
+  // 背景色
+  --ey-bg-color: #ffffff;
+  --ey-bg-color-page: #f2f3f5;
+  --ey-bg-color-overlay: rgba(255, 255, 255, 0.9);
+  
+  // 文字色
+  --ey-text-color-primary: #303133;
+  --ey-text-color-regular: #606266;
+  --ey-text-color-secondary: #909399;
+  --ey-text-color-placeholder: #c0c4cc;
+  
+  // 边框色
+  --ey-border-color: #dcdfe6;
+  --ey-border-color-light: #e4e7ed;
+  --ey-border-color-lighter: #ebeef5;
+  --ey-border-color-extra-light: #f2f6fc;
+  
+  // 状态色
+  --ey-color-success: #67c23a;
+  --ey-color-warning: #e6a23c;
+  --ey-color-danger: #f56c6c;
+  --ey-color-info: #909399;
+}
+
+// 暗色主题
+[data-theme="dark"] {
+  // 默认
+  --ey-color-default: #e5eaf3;
+  --ey-color-default-plain: rgba(255, 255, 255, 0.2);
+  --ey-color-default-hover: #bec2ca;
+  --ey-color-default-active: #a3a6ad;
+  
+  // 主色
+  --ey-color-primary: #58ebd3;
+  --ey-color-primary-plain: rgba(65, 184, 188, 0.2);
+  --ey-color-primary-hover: #61cdd1;
+  --ey-color-primary-active: #41b7bc;
+  
+  // 背景色
+  --ey-bg-color: #1d1e1f;
+  --ey-border-color: #858689;
+  --ey-border-color-light: #414243;
+  --ey-border-color-lighter: #363637;
+  --ey-border-color-extra-light: #2b2b2c;
+  --ey-bg-color-page: #121212;
+  --ey-bg-color-overlay: rgba(0, 0, 0, 0.8);
+  
+  // 文字色 || 边框色
+  --ey-text-color-primary: #e5eaf3;
+  --ey-text-color-regular: #cfd3dc;
+  --ey-text-color-secondary: #a3a6ad;
+  --ey-text-color-placeholder: #6c6e72;
+  
+  // 状态色
+  --ey-color-success: #67c23a;
+  --ey-color-warning: #e6a23c;
+  --ey-color-danger: #f56c6c;
+  --ey-color-info: #909399;
+}

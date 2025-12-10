@@ -4,8 +4,10 @@ import { Direction } from "../../types/layout"
 type RadioVariant = 'default' | 'outlined' | 'card' | 'tab'
 
 export interface RadioProps extends OptionItem {
-  checked: boolean
-  name: string
+  checked?: boolean
+  name?: string
+  color?: string
+  disabled?: boolean
 }
 
 export interface RadioGroupProps {

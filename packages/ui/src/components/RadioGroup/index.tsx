@@ -1,7 +1,8 @@
 /// <reference types="vue/jsx" />
-import { PropType, defineComponent, getCurrentInstance } from "vue";
+import { PropType, defineComponent } from "vue";
 import { RadioGroupProps } from "./type";
 import { EyRadio } from "./_components/Radio";
+import { useVModel } from "@vueuse/core";
 import './base.scss';
 
 let radioGroupCounter = 0
@@ -9,8 +10,9 @@ let radioGroupCounter = 0
 export const EyRadioGroup = defineComponent({
   name: 'EyRadioGroup',
   props: {
-    value: {
+    modelValue: {
       type: String as PropType<RadioGroupProps['value']>,
+      default: ''
     },
     options: {
       type: Array as PropType<RadioGroupProps['options']>,
@@ -25,8 +27,17 @@ export const EyRadioGroup = defineComponent({
       default: 'default'
     }
   },
-  setup(props) {
+  emits: {
+    'update:modelValue': (value: string) => true
+  },
+  setup(props, { emit }) {
     const radioName = `ey-radio-${radioGroupCounter++}`
+    const modelValue = useVModel(props, 'modelValue', emit)
+    
+    const handleRadioSwitch = (value: string) => {
+      modelValue.value = value
+    }
+    
     return () => {
       return (
         <div
@@ -40,8 +51,10 @@ export const EyRadioGroup = defineComponent({
             <EyRadio
               name={radioName}
               value={option.value}
-              checked={props.value === option.value}
+              checked={modelValue.value === option.value}
               label={option.label}
+              disabled={option.disabled}
+              onSwitch={handleRadioSwitch}
             />
           ))}
         </div>

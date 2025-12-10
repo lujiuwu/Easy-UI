@@ -8,6 +8,13 @@
     { label: 'Option 2', value: '2' },
     { label: 'Option 3', value: '3' },
   ])
+
+  const value2 = ref('2')
+  const options2 = ref([
+    { label: 'Option 1', value: '1' },
+    { label: 'Option 2', value: '2', disabled: true },
+    { label: 'Option 3', value: '3' },
+  ])
 </script>
 
 <template>
@@ -23,6 +30,9 @@
     </Variant>
     <Variant title="Tab">
       <EyRadioGroup v-model="value" :options="options" variant="tab" />
+    </Variant>
+    <Variant title="Disabled">
+      <EyRadioGroup v-model="value2" :options="options2" />
     </Variant>
   </Story>
 </template>

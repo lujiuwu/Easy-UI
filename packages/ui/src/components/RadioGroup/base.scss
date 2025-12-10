@@ -7,10 +7,17 @@
     gap: 4px;
     cursor: pointer;
     user-select: none; // 防止文本选中
+    height: fit-content;
+    width: fit-content;
     
     input[type="radio"] {
       cursor: pointer;
       margin: 0; // 重置默认 margin
+      // 使用主题变量设置选中颜色
+      accent-color: var(--ey-color-primary);
+      &:disabled {
+        cursor: not-allowed;
+      }
     }
     
     span {
@@ -30,14 +37,14 @@
 // outlined
 .ey-radio-group--outlined {
   .ey-radio-group__item {
-    border: 1px solid #666;
+    border: 1px solid var(--ey-border-color);
     border-radius: 5px;
     padding: 4px 8px;
     transition: border-color 0.3s ease; // 添加过渡效果
     
     // 当内部的 radio 被选中时，改变边框颜色
     &:has(input[type="radio"]:checked) {
-      border-color: #409eff;
+      border-color: var(--ey-color-primary);
     }
 
   }
@@ -47,8 +54,8 @@
 .ey-radio-group--card {
   .ey-radio-group__item {
     border-radius: 5px;
-    color:#fff;
-    background-color:#409eff;
+    color:var(--ey-color-default);
+    background-color:var(--ey-color-primary-plain);
     padding: 4px 8px;
   }
 }
@@ -58,7 +65,7 @@
   .ey-radio-group__item {
     padding: 4px 8px;
     &:has(input[type="radio"]:checked) {
-      border-bottom: 2px solid #409eff;
+      border-bottom: 2px solid var(--ey-color-primary);
     }
   }
 }
