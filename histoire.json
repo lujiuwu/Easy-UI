@@ -30,47 +30,6 @@
       "markdownFile": null
     },
     {
-      "id": "src-components-checkbox-checkbox-story-vue",
-      "title": "Checkbox",
-      "group": "ui",
-      "layout": {
-        "type": "grid",
-        "width": "80%"
-      },
-      "docsOnly": false,
-      "variants": [
-        {
-          "id": "src-components-checkbox-checkbox-story-vue-0",
-          "title": "Default"
-        },
-        {
-          "id": "src-components-checkbox-checkbox-story-vue-1",
-          "title": "Outlined"
-        },
-        {
-          "id": "src-components-checkbox-checkbox-story-vue-2",
-          "title": "Card"
-        },
-        {
-          "id": "src-components-checkbox-checkbox-story-vue-3",
-          "title": "Tab"
-        },
-        {
-          "id": "src-components-checkbox-checkbox-story-vue-4",
-          "title": "Custom Color"
-        }
-      ],
-      "responsiveDisabled": true,
-      "autoPropsDisabled": false,
-      "relativePath": "src/components/Checkbox/checkbox.story.vue",
-      "supportPluginId": "vue3",
-      "treePath": [
-        "Checkbox"
-      ],
-      "virtual": false,
-      "markdownFile": null
-    },
-    {
       "id": "src-components-button-button-story-vue",
       "title": "Button",
       "group": "ui",
@@ -112,6 +71,47 @@
       "markdownFile": null
     },
     {
+      "id": "src-components-checkbox-checkbox-story-vue",
+      "title": "Checkbox",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-checkbox-checkbox-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-checkbox-checkbox-story-vue-1",
+          "title": "Outlined"
+        },
+        {
+          "id": "src-components-checkbox-checkbox-story-vue-2",
+          "title": "Card"
+        },
+        {
+          "id": "src-components-checkbox-checkbox-story-vue-3",
+          "title": "Tab"
+        },
+        {
+          "id": "src-components-checkbox-checkbox-story-vue-4",
+          "title": "Custom Color"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Checkbox/checkbox.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Checkbox"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-icon-icon-story-vue",
       "title": "Icon",
       "group": "icon",
@@ -145,35 +145,6 @@
       "markdownFile": null
     },
     {
-      "id": "src-components-collapse-collapse-story-vue",
-      "title": "Collapse",
-      "group": "ui",
-      "layout": {
-        "type": "grid",
-        "width": "80%"
-      },
-      "docsOnly": false,
-      "variants": [
-        {
-          "id": "src-components-collapse-collapse-story-vue-0",
-          "title": "Default"
-        },
-        {
-          "id": "src-components-collapse-collapse-story-vue-1",
-          "title": "Custom"
-        }
-      ],
-      "responsiveDisabled": true,
-      "autoPropsDisabled": false,
-      "relativePath": "src/components/Collapse/collapse.story.vue",
-      "supportPluginId": "vue3",
-      "treePath": [
-        "Collapse"
-      ],
-      "virtual": false,
-      "markdownFile": null
-    },
-    {
       "id": "src-components-input-input-story-vue",
       "title": "Input",
       "group": "ui",
@@ -202,6 +173,35 @@
       "supportPluginId": "vue3",
       "treePath": [
         "Input"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-collapse-collapse-story-vue",
+      "title": "Collapse",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-collapse-collapse-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-collapse-collapse-story-vue-1",
+          "title": "Custom"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Collapse/collapse.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Collapse"
       ],
       "virtual": false,
       "markdownFile": null

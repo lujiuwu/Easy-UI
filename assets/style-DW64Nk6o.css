@@ -3503,7 +3503,6 @@ body {
   position: relative;
   overflow: visible !important;
   display: inline-block;
-  margin: 10px;
 }
 
 .ey-badge {
@@ -3631,6 +3630,45 @@ body {
 }
 .ey-checkbox--tab .ey-checkbox__item:has(input[type=checkbox]:checked) {
   border-bottom: 2px solid var(--ey-color-primary);
+}input {
+  border: none;
+  outline: none;
+}
+
+.ey-input {
+  width: 320px;
+  height: auto;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.ey-input__prefix, .ey-input__suffix {
+  flex-shrink: 0;
+}
+.ey-input__content {
+  flex: 1;
+  min-width: 0;
+  width: 0;
+  padding: 8px 16px;
+  background-color: transparent;
+  position: relative;
+}
+
+.ey-input--default {
+  border-radius: 5px;
+  border: 1px solid #666;
+  transition: border 0.3s ease;
+}
+.ey-input--default:focus-within {
+  border: 1px solid #fff;
+}
+
+.ey-input--underline {
+  border-bottom: 1px solid #666;
+  transition: border-bottom 0.3s ease;
+}
+.ey-input--underline:focus-within {
+  border-bottom: 1px solid #fff;
 }.ey-toggle {
   display: inline-flex;
   align-items: center;
@@ -3752,45 +3790,6 @@ body {
 .collapse-leave-from {
   max-height: 500px;
   opacity: 1;
-}input {
-  border: none;
-  outline: none;
-}
-
-.ey-input {
-  width: 320px;
-  height: auto;
-  color: #000;
-  display: flex;
-  align-items: center;
-}
-.ey-input__prefix, .ey-input__suffix {
-  flex-shrink: 0;
-}
-.ey-input__content {
-  flex: 1;
-  min-width: 0;
-  width: 0;
-  padding: 8px 16px;
-  background-color: transparent;
-  position: relative;
-}
-
-.ey-input--default {
-  border-radius: 5px;
-  border: 1px solid #666;
-  transition: border 0.3s ease;
-}
-.ey-input--default:focus-within {
-  border: 1px solid #fff;
-}
-
-.ey-input--underline {
-  border-bottom: 1px solid #666;
-  transition: border-bottom 0.3s ease;
-}
-.ey-input--underline:focus-within {
-  border-bottom: 1px solid #fff;
 }.ey-modal {
   position: absolute;
   top: 50%;
