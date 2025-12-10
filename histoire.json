@@ -121,39 +121,6 @@
       "markdownFile": null
     },
     {
-      "id": "src-components-input-input-story-vue",
-      "title": "Input",
-      "group": "ui",
-      "layout": {
-        "type": "grid",
-        "width": "80%"
-      },
-      "docsOnly": false,
-      "variants": [
-        {
-          "id": "src-components-input-input-story-vue-0",
-          "title": "Default"
-        },
-        {
-          "id": "src-components-input-input-story-vue-1",
-          "title": "Underline"
-        },
-        {
-          "id": "src-components-input-input-story-vue-2",
-          "title": "With suffix"
-        }
-      ],
-      "responsiveDisabled": true,
-      "autoPropsDisabled": false,
-      "relativePath": "src/components/Input/Input.story.vue",
-      "supportPluginId": "vue3",
-      "treePath": [
-        "Input"
-      ],
-      "virtual": false,
-      "markdownFile": null
-    },
-    {
       "id": "src-components-modal-modal-story-vue",
       "title": "Modal",
       "group": "ui",
@@ -236,6 +203,39 @@
       "supportPluginId": "vue3",
       "treePath": [
         "Select"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-input-input-story-vue",
+      "title": "Input",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-input-input-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-input-input-story-vue-1",
+          "title": "Underline"
+        },
+        {
+          "id": "src-components-input-input-story-vue-2",
+          "title": "With suffix"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Input/Input.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Input"
       ],
       "virtual": false,
       "markdownFile": null
