@@ -41,15 +41,23 @@
       "variants": [
         {
           "id": "src-components-button-button-story-vue-0",
-          "title": "Variant"
+          "title": "Type"
         },
         {
           "id": "src-components-button-button-story-vue-1",
-          "title": "Size"
+          "title": "Variant"
         },
         {
           "id": "src-components-button-button-story-vue-2",
+          "title": "Size"
+        },
+        {
+          "id": "src-components-button-button-story-vue-3",
           "title": "Disabled"
+        },
+        {
+          "id": "src-components-button-button-story-vue-4",
+          "title": "Prefix Icon And Suffix Icon"
         }
       ],
       "responsiveDisabled": true,
@@ -78,7 +86,19 @@
         },
         {
           "id": "src-components-checkbox-checkbox-story-vue-1",
-          "title": "Vertical"
+          "title": "Outlined"
+        },
+        {
+          "id": "src-components-checkbox-checkbox-story-vue-2",
+          "title": "Card"
+        },
+        {
+          "id": "src-components-checkbox-checkbox-story-vue-3",
+          "title": "Tab"
+        },
+        {
+          "id": "src-components-checkbox-checkbox-story-vue-4",
+          "title": "Custom Color"
         }
       ],
       "responsiveDisabled": true,
@@ -116,6 +136,72 @@
       "supportPluginId": "vue3",
       "treePath": [
         "Collapse"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-icon-icon-story-vue",
+      "title": "Icon",
+      "group": "icon",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-icon-icon-story-vue-0",
+          "title": "Material Design Icons"
+        },
+        {
+          "id": "src-components-icon-icon-story-vue-1",
+          "title": "Size Examples"
+        },
+        {
+          "id": "src-components-icon-icon-story-vue-2",
+          "title": "Color Examples"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Icon/Icon.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Icon"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-input-input-story-vue",
+      "title": "Input",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-input-input-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-input-input-story-vue-1",
+          "title": "Underline"
+        },
+        {
+          "id": "src-components-input-input-story-vue-2",
+          "title": "With suffix"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Input/Input.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Input"
       ],
       "virtual": false,
       "markdownFile": null
@@ -170,6 +256,10 @@
         {
           "id": "src-components-radiogroup-radio-group-story-vue-3",
           "title": "Tab"
+        },
+        {
+          "id": "src-components-radiogroup-radio-group-story-vue-4",
+          "title": "Disabled"
         }
       ],
       "responsiveDisabled": true,
@@ -203,39 +293,6 @@
       "supportPluginId": "vue3",
       "treePath": [
         "Select"
-      ],
-      "virtual": false,
-      "markdownFile": null
-    },
-    {
-      "id": "src-components-input-input-story-vue",
-      "title": "Input",
-      "group": "ui",
-      "layout": {
-        "type": "grid",
-        "width": "80%"
-      },
-      "docsOnly": false,
-      "variants": [
-        {
-          "id": "src-components-input-input-story-vue-0",
-          "title": "Default"
-        },
-        {
-          "id": "src-components-input-input-story-vue-1",
-          "title": "Underline"
-        },
-        {
-          "id": "src-components-input-input-story-vue-2",
-          "title": "With suffix"
-        }
-      ],
-      "responsiveDisabled": true,
-      "autoPropsDisabled": false,
-      "relativePath": "src/components/Input/Input.story.vue",
-      "supportPluginId": "vue3",
-      "treePath": [
-        "Input"
       ],
       "virtual": false,
       "markdownFile": null
