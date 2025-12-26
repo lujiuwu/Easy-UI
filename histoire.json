@@ -112,6 +112,35 @@
       "markdownFile": null
     },
     {
+      "id": "src-components-collapse-collapse-story-vue",
+      "title": "Collapse",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-collapse-collapse-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-collapse-collapse-story-vue-1",
+          "title": "Custom"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Collapse/collapse.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Collapse"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-icon-icon-story-vue",
       "title": "Icon",
       "group": "icon",
@@ -178,8 +207,8 @@
       "markdownFile": null
     },
     {
-      "id": "src-components-collapse-collapse-story-vue",
-      "title": "Collapse",
+      "id": "src-components-menu-menu-story-vue",
+      "title": "Menu",
       "group": "ui",
       "layout": {
         "type": "grid",
@@ -188,20 +217,20 @@
       "docsOnly": false,
       "variants": [
         {
-          "id": "src-components-collapse-collapse-story-vue-0",
+          "id": "src-components-menu-menu-story-vue-0",
           "title": "Default"
         },
         {
-          "id": "src-components-collapse-collapse-story-vue-1",
-          "title": "Custom"
+          "id": "src-components-menu-menu-story-vue-1",
+          "title": "Multiple"
         }
       ],
       "responsiveDisabled": true,
       "autoPropsDisabled": false,
-      "relativePath": "src/components/Collapse/collapse.story.vue",
+      "relativePath": "src/components/Menu/menu.story.vue",
       "supportPluginId": "vue3",
       "treePath": [
-        "Collapse"
+        "Menu"
       ],
       "virtual": false,
       "markdownFile": null
@@ -227,6 +256,43 @@
       "supportPluginId": "vue3",
       "treePath": [
         "Modal"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-progress-progress-story-vue",
+      "title": "Progress",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-progress-progress-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-progress-progress-story-vue-1",
+          "title": "Show Percent"
+        },
+        {
+          "id": "src-components-progress-progress-story-vue-2",
+          "title": "Custom Color"
+        },
+        {
+          "id": "src-components-progress-progress-story-vue-3",
+          "title": "Update Percent"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Progress/progress.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Progress"
       ],
       "virtual": false,
       "markdownFile": null
@@ -285,6 +351,10 @@
         {
           "id": "src-components-select-select-story-vue-0",
           "title": "Default"
+        },
+        {
+          "id": "src-components-select-select-story-vue-1",
+          "title": "Multiple"
         }
       ],
       "responsiveDisabled": true,
@@ -323,8 +393,8 @@
       "markdownFile": null
     },
     {
-      "id": "src-components-toggle-toggle-story-vue",
-      "title": "Toggle",
+      "id": "src-components-toast-toast-story-vue",
+      "title": "Toast",
       "group": "ui",
       "layout": {
         "type": "grid",
@@ -333,16 +403,41 @@
       "docsOnly": false,
       "variants": [
         {
-          "id": "src-components-toggle-toggle-story-vue-0",
+          "id": "src-components-toast-toast-story-vue-0",
           "title": "Default"
         }
       ],
       "responsiveDisabled": true,
       "autoPropsDisabled": false,
-      "relativePath": "src/components/Toggle/toggle.story.vue",
+      "relativePath": "src/components/Toast/toast.story.vue",
       "supportPluginId": "vue3",
       "treePath": [
-        "Toggle"
+        "Toast"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-treeselection-treeselection-story-vue",
+      "title": "TreeSelection",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-treeselection-treeselection-story-vue-0",
+          "title": "Default"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/TreeSelection/treeSelection.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "TreeSelection"
       ],
       "virtual": false,
       "markdownFile": null
