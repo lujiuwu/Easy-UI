@@ -112,6 +112,35 @@
       "markdownFile": null
     },
     {
+      "id": "src-components-collapse-collapse-story-vue",
+      "title": "Collapse",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-collapse-collapse-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-collapse-collapse-story-vue-1",
+          "title": "Custom"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Collapse/collapse.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Collapse"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-icon-icon-story-vue",
       "title": "Icon",
       "group": "icon",
@@ -140,35 +169,6 @@
       "supportPluginId": "vue3",
       "treePath": [
         "Icon"
-      ],
-      "virtual": false,
-      "markdownFile": null
-    },
-    {
-      "id": "src-components-collapse-collapse-story-vue",
-      "title": "Collapse",
-      "group": "ui",
-      "layout": {
-        "type": "grid",
-        "width": "80%"
-      },
-      "docsOnly": false,
-      "variants": [
-        {
-          "id": "src-components-collapse-collapse-story-vue-0",
-          "title": "Default"
-        },
-        {
-          "id": "src-components-collapse-collapse-story-vue-1",
-          "title": "Custom"
-        }
-      ],
-      "responsiveDisabled": true,
-      "autoPropsDisabled": false,
-      "relativePath": "src/components/Collapse/collapse.story.vue",
-      "supportPluginId": "vue3",
-      "treePath": [
-        "Collapse"
       ],
       "virtual": false,
       "markdownFile": null
@@ -261,8 +261,8 @@
       "markdownFile": null
     },
     {
-      "id": "src-components-radiogroup-radio-group-story-vue",
-      "title": "RadioGroup",
+      "id": "src-components-popover-popover-story-vue",
+      "title": "Popover",
       "group": "ui",
       "layout": {
         "type": "grid",
@@ -271,32 +271,16 @@
       "docsOnly": false,
       "variants": [
         {
-          "id": "src-components-radiogroup-radio-group-story-vue-0",
+          "id": "src-components-popover-popover-story-vue-0",
           "title": "Default"
-        },
-        {
-          "id": "src-components-radiogroup-radio-group-story-vue-1",
-          "title": "Outlined"
-        },
-        {
-          "id": "src-components-radiogroup-radio-group-story-vue-2",
-          "title": "Card"
-        },
-        {
-          "id": "src-components-radiogroup-radio-group-story-vue-3",
-          "title": "Tab"
-        },
-        {
-          "id": "src-components-radiogroup-radio-group-story-vue-4",
-          "title": "Disabled"
         }
       ],
       "responsiveDisabled": true,
       "autoPropsDisabled": false,
-      "relativePath": "src/components/RadioGroup/radio-group.story.vue",
+      "relativePath": "src/components/Popover/popover.story.vue",
       "supportPluginId": "vue3",
       "treePath": [
-        "RadioGroup"
+        "Popover"
       ],
       "virtual": false,
       "markdownFile": null
@@ -339,6 +323,47 @@
       "markdownFile": null
     },
     {
+      "id": "src-components-radiogroup-radio-group-story-vue",
+      "title": "RadioGroup",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-radiogroup-radio-group-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-radiogroup-radio-group-story-vue-1",
+          "title": "Outlined"
+        },
+        {
+          "id": "src-components-radiogroup-radio-group-story-vue-2",
+          "title": "Card"
+        },
+        {
+          "id": "src-components-radiogroup-radio-group-story-vue-3",
+          "title": "Tab"
+        },
+        {
+          "id": "src-components-radiogroup-radio-group-story-vue-4",
+          "title": "Disabled"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/RadioGroup/radio-group.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "RadioGroup"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-select-select-story-vue",
       "title": "Select",
       "group": "ui",
@@ -363,6 +388,60 @@
       "supportPluginId": "vue3",
       "treePath": [
         "Select"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-table-table-story-vue",
+      "title": "Table",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-table-table-story-vue-0",
+          "title": "Default"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Table/table.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Table"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-tabs-tabs-story-vue",
+      "title": "Tabs",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-tabs-tabs-story-vue-0",
+          "title": "Default"
+        },
+        {
+          "id": "src-components-tabs-tabs-story-vue-1",
+          "title": "Card"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Tabs/tabs.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Tabs"
       ],
       "virtual": false,
       "markdownFile": null
