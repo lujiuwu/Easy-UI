@@ -1,0 +1,39 @@
+.ey-tabs-wrapper {
+  display:flex;
+  flex-direction: column;
+  width: fit-content;
+  .ey-tabs {
+    display: flex;
+    gap:10px;
+  
+    &__item {
+      padding: 4px 8px;
+      cursor: pointer;
+      &--active {
+        color: var(--ey-color-primary);
+      }
+    }
+  }
+  .ey-tabs--card {
+   
+    .ey-tabs__item {
+      &--active {
+        border-bottom: none;
+        background-color: var(--ey-color-primary-plain);
+        color: var(--ey-color-primary);
+      }
+    }
+  }
+  .ey-tabs__bottom-line {
+    height: 2px;
+    background-color: rgba(241, 241, 241, 0.2);
+    position: relative;
+    &__item {
+      position: absolute;
+      height: 2px;
+      top:0;
+      background-color: var(--ey-color-primary);
+      transition: all 0.3s ease;
+    }
+  }
+}
