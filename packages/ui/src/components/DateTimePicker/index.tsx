@@ -4,6 +4,7 @@ import { EyInput } from "../Input";
 import { EyIcon } from "..";
 import dayjs from "dayjs";
 import { Panel } from "./_components/Panel";
+import { useVModel } from "@vueuse/core";
 
 export const EyDateTimePicker = defineComponent({
   name: 'EyDateTimePicker',
@@ -25,15 +26,16 @@ export const EyDateTimePicker = defineComponent({
     'update:modelValue': (value: string) => true
   },
   setup(props,{emit}) {
+    const modelValue = useVModel(props, 'modelValue', emit)
     return () => {
       return (
         <div class="ey-datetime-picker-wrapper">
-          <EyInput value={props.modelValue} disabled>
+          <EyInput value={modelValue.value} disabled>
           {{
             suffix: () => <EyIcon name="mdi:calendar" size="1.5em" class="mr-5px cursor-pointer" />
           }}
         </EyInput>
-        <Panel />
+        <Panel v-model={modelValue.value} />
         </div>
       )
     }
