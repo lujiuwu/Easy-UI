@@ -112,6 +112,31 @@
       "markdownFile": null
     },
     {
+      "id": "src-components-datepicker-datepicker-story-vue",
+      "title": "DatePicker",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-datepicker-datepicker-story-vue-0",
+          "title": "Default"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/DatePicker/datepicker.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "DatePicker"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
       "id": "src-components-collapse-collapse-story-vue",
       "title": "Collapse",
       "group": "ui",
@@ -471,6 +496,31 @@
       "supportPluginId": "vue3",
       "treePath": [
         "Tag"
+      ],
+      "virtual": false,
+      "markdownFile": null
+    },
+    {
+      "id": "src-components-textarea-textarea-story-vue",
+      "title": "Textarea",
+      "group": "ui",
+      "layout": {
+        "type": "grid",
+        "width": "80%"
+      },
+      "docsOnly": false,
+      "variants": [
+        {
+          "id": "src-components-textarea-textarea-story-vue-0",
+          "title": "Default"
+        }
+      ],
+      "responsiveDisabled": true,
+      "autoPropsDisabled": false,
+      "relativePath": "src/components/Textarea/textarea.story.vue",
+      "supportPluginId": "vue3",
+      "treePath": [
+        "Textarea"
       ],
       "virtual": false,
       "markdownFile": null
