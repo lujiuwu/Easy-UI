@@ -3,6 +3,7 @@ import { useVModel } from "@vueuse/core";
 import JSONPreviewProps from "./type";
 import './base.scss';
 import { StringComponent } from "./_components/String";
+import { NumberComponent } from "./_components/Number";
 
 export const EyJSONEditor = defineComponent({
   name: 'EyJSONEditor',
@@ -24,11 +25,23 @@ export const EyJSONEditor = defineComponent({
       return <StringComponent obj={item} />
     }
 
+    const renderNumberItem = (item: Record<string, number>) => {
+      return <NumberComponent obj={item} />
+    }
+
+    const renderItem = (item: Record<string, string | number>) => {
+      if (typeof item?.key === 'string') {
+        return renderStringItem(item as Record<string, string>)
+      } else if (typeof item?.value === 'number') {
+        return renderNumberItem(item as Record<string, number>)
+      }
+    }
+
     return () => {
       return <div>
           <div class="json-preview" >
             {
-              entries.map(([key, value]) => renderStringItem({ key: key as string, value: value as string }))
+              entries.map(([key, value]) => renderItem({ key: key as string, value: value as string | number }))
             }
           </div>
         </div>
