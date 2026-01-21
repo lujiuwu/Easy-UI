@@ -1,5 +1,5 @@
 <template>
-  <Story title="JSONEditor" group="ui">
+  <Story title="JSONPreview" group="ui">
     <Variant title="Default">
       <EyJSONEditor v-model="json" />
     </Variant>

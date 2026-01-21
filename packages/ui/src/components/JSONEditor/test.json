@@ -1,9 +1,0 @@
-{
-  "name": "John",
-  "age": 30,
-  "city": "New York",
-  "address": {
-    "street": "123 Main St",
-    "zip": "10001"
-  }
-}
